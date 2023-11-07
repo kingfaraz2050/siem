@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SIEM Evaluation Criteria and POC Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            background-color: #3498db;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .open-search-button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+        }
+        .wazuh-button {
+            background-color: #f44336; /* Red */
+            color: white;
+        }
+        .main-content {
+            max-width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+        h2 {
+            color: #3498db;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CDEV SIEM Evaluation Criteria and POC Project</h1>
+    </div>
+    <div class="button-container">
+        <a href="#" class="button open-search-button" onclick="openSearchCriteria()">OpenSearch</a>
+        <a href="#" class="button wazuh-button" onclick="openWazuhCriteria()">Wazuh</a>
+    </div>
+    <div class="main-content">
+        <h2>Purpose of SIEM Evaluation</h2>
+        <p>SIEM evaluation aims to select the most suitable solution that aligns with the CDEV's security and operational requirements. It serves to evaluate the following purposes:</p>
+        <ul>
+            <li>Enhance security monitoring and threat detection.</li>
+            <li>Ensure compliance with regulatory standards.</li>
+            <li>Improve incident response capabilities.</li>
+            <li>Efficiently manage and analyze logs.</li>
+            <li>Integrate seamlessly with existing systems.</li>
+            <li>Support future growth and scalability.</li>
+        </ul>
+        <h2>Main Features for Comparison</h2>
+        <p>We will compare the following main features between OpenSearch and Wazuh:</p>
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>OpenSearch</th>
+                <th>Wazuh</th>
+            </tr>
+            <tr>
+                <td>Real-time event correlation</td>
+                <td>✓</td>
+                <td>✓</td>
+            </tr>
+            <tr>
+                <td>Incident detection and alerting</td>
+                <td>✓</td>
+                <td>✓</td>
+            </tr>
+            <tr>
+                <td>Customizable correlation rules</td>
+                <td>✓</td>
+                <td>✓</td>
+            </tr>
+            <tr>
+                <td>Incident tracking and reporting</td>
+                <td>✓</td>
+                <td>✓</td>
+            </tr>
+            <!-- Add more features here -->
+        </table>
+    </div>
+    <script>
+        function openSearchCriteria() {
+            window.location.href = 'opensearch_criteria.html?title=OpenSearch Evaluation Criteria';
+        }
+
+        function openWazuhCriteria() {
+            window.location.href = 'wazuh_criteria.html?title=Evaluation Criteria for Wazuh';
+        }
+    </script>
+</body>
+</html>
